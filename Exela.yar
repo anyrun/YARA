@@ -25,7 +25,7 @@ rule Exela
         $s11 = "Key Content\\s*: (.*)" wide
 
     condition:
-        uint16(0) == 0x5A4D and filesize < 300KB
+        uint16(0) == 0x5A4D and filesize < 400KB
             and
         (
             any of ($x*)
