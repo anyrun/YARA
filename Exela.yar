@@ -10,6 +10,7 @@ rule Exela
 
     strings:
         $x1 = "Exela Stealer" wide nocase
+        $x2 = "C:\\Users\\chall\\source\\repos\\Exela\\Exela\\obj\\Release\\Exela.pdb" ascii fullword
 
         $s1 = "discord.com/api/webhooks" wide
         $s2 = "wifi.txt" wide
