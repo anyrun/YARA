@@ -9,7 +9,7 @@ rule Agniane
 
     strings:
         $x1 = "Agniane Stealer" wide nocase
-        $x2 = "C:\\Users\\Keepye\\Desktop\\123\\obj\\Release\\Agniane.pdb" ascii fullword
+        $x2 = "obj\\Release\\Agniane.pdb" ascii fullword
 
         $s1 = "System.Data.SQLite" wide
         $s2 = "Start collecting cookies from browsers" wide
