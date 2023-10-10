@@ -4,6 +4,7 @@ rule MortisLocker
 		author = "ANY.RUN"
 		description = "Detects MortisLocker ransomware"
 		date = "2023-10-05"
+		reference = "https://twitter.com/MalGamy12/status/1709475837685256466"
 		hash1 = "a5012e20342f4751360fd0d15ab013385cecd2a5f3e7a3e8503b1852d8499819"
 		hash2 = "b6a4331334a16af65c5e4193f45b17c874e3eff8dd8667fd7cb8c7a570e2a8b9"
 		hash3 = "c6df9cb7c26e0199106bdcd765d5b93436f373900b26f23dfc03b8b645c6913f"
