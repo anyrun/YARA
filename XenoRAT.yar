@@ -48,8 +48,8 @@ rule XenoRAT_server {
       hash1 = "020D6667BE8E017E0B432B228A9097CFFE9E5CA248EECAF566151E4E2BD7195B" 
       hash2 = "B61E4D30AF50474AED593EC748E4A88875A7B492A319EDC2FD44B9F51B094769"
            
-      url1 = "https://app.any.run/tasks/e3907a74-8af4-4157-8fe9-234c2f9199a5"
-      url2 = "https://app.any.run/tasks/056ace36-8957-43da-8775-26c60ec69d25"
+      url1 = "https://app.any.run/tasks/95ab175f-88d8-4e9e-9283-8e0fe2a7335c"
+      url2 = "https://app.any.run/tasks/b6ad1585-e5e8-49f5-bc36-7fd91e8c9fd8"
       
    strings:
       $x1 = "The name of this tool is xeno-rat. Why is it called that? Well, to be honest, it just sounded nice." ascii fullword
@@ -66,11 +66,11 @@ rule XenoRAT_server {
       $s7 = "Current Password: 1234" fullword wide
       $s8 = "plugins\\Hvnc.dll" fullword wide
       $s9 = "hidden_desktop" fullword wide
-      $s10 = "C:\\Users\\moom825\\Desktop\\xeno rat\\xeno rat server\\obj\\Release\\xeno rat server.pdb" fullword ascii
+      $s10 = "moom825" ascii
       
       
    condition:
       uint16(0) == 0x5a4d and
-      (1 of ($x*) and 5 of ($s*))
+      (1 of ($x*) or 7 of ($s*))
 }
 
