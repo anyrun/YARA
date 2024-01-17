@@ -36,7 +36,7 @@ rule XenoRAT {
 
    condition:
       uint16(0) == 0x5a4d and filesize < 300KB and
-      (1 of ($x*) or 1 of them)
+      (1 of ($x*) or 7 of them)
 }
 
 
