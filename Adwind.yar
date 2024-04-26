@@ -1,8 +1,8 @@
-rule Adwind {
+rule Adwind_Hunt {
     meta:
         author = "ANY.RUN"
         family = "Adwind"
-        description = "Detects Adwind"
+        description = "Detects Adwind, use with caution, may have False Positives"
         date = "2024-04-26"
     strings:
         $s1 = "META-INF/MANIFEST.MF" ascii
