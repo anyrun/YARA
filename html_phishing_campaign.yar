@@ -17,6 +17,6 @@ rule html_phishing_campaign {
         $s6 = "hold the Windows Key <i" ascii wide 
         $s7 = "Perform the steps above to finish verification." ascii wide 
                 
-	condition: 
+    condition: 
         2 of them 	 
 } 
